@@ -26,17 +26,45 @@ private:
 	int mExp;
 public:
 	// member initializer list
-	Quest(int id, int exp) : mId{ id }, mExp{ exp }
+	Quest() : mId{ 1 }, mExp{ 1 }
 	{
+		std::cout << "Quest()" << std::endl;
 	}
 
+	Quest(std::string excel) : Quest() // delegate constructor
+	{
+		std::cout << "Quest(string)" << std::endl;
+
+	}
+	~Quest()
+	{
+		std::cout << "this object destructed" << std::endl;
+	}
 	void Print()
 	{
 		std::cout << "ID : " << mId << ", EXP " << mExp << std::endl;
 	}
 };
+
+class MyArray
+{
+private:
+	int mLength;
+	int* mArray;
+public:
+	MyArray(int length) : mLength{ length }
+	{
+		mArray = new int[length] {};
+	}
+	~MyArray()
+	{
+		std::cout << "mArray of MyArray is deleted" << std::endl;
+		delete[] mArray;
+		mArray = nullptr;
+	}
+};
 int main()
 {
-	Quest q1(1, 10);
-	q1.Print();
+	MyArray* myArray{new MyArray(20)};
+	delete myArray;
 }
