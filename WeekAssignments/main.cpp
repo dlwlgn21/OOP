@@ -1,11 +1,11 @@
 #include <iostream>
-#include "MyString.h"
+#include "String.h"
 
 int main()
 {
-	MyString str("Doggi");
+	String str("Doggi");
 	std::cout << str << std::endl;
-	MyString catStr = str + " COOLD";
+	String catStr = str + " COOLD";
 
 	catStr += "GArade good riri";
 	std::cout << catStr << std::endl;

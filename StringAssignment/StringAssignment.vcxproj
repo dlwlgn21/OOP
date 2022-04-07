@@ -139,11 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\WeekAssignments\MyString.h" />
+    <ClInclude Include="..\WeekAssignments\String.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\WeekAssignments\main.cpp" />
-    <ClCompile Include="..\WeekAssignments\MyString.cpp" />
+    <ClCompile Include="..\WeekAssignments\String.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

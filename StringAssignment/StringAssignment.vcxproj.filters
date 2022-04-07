@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\WeekAssignments\MyString.h">
+    <ClInclude Include="..\WeekAssignments\String.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\WeekAssignments\MyString.cpp">
+    <ClCompile Include="..\WeekAssignments\String.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="..\WeekAssignments\main.cpp">
