@@ -9,7 +9,7 @@ class String
 {
 private:
 	char* mStr;
-	unsigned int mLength;
+	size_t mLength;
 	char* CatString(const char* str, Mode);
 public:
 	String();

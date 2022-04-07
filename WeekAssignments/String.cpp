@@ -40,7 +40,7 @@ String::String(const String& other) : mLength {other.mLength}
 }
 char* String::CatString(const char* str, Mode mode)
 {
-	int cat_lenth = strlen(str) + mLength;
+	size_t cat_lenth = strlen(str) + mLength;
 	char* temp = new char[cat_lenth + 1];
 	assert(temp != nullptr);
 
