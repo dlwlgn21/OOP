@@ -92,6 +92,7 @@ String& String::operator=(const String& other)
 char& String::operator[](int index)
 {
 	std::cout << "operator overloading [] called" << std::endl;
+	assert(index < mLength && index >= 0);
 	return mStr[index];
 }
 
@@ -109,7 +110,7 @@ const char* String::GetString() const
 {
 	return mStr;
 }
-unsigned int String::GetLength() const
+size_t String::GetLength() const
 {
 	return mLength;
 }

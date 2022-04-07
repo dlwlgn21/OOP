@@ -31,6 +31,6 @@ public:
 	char& operator[](int index);
 	
 	const char* GetString() const;
-	unsigned int GetLength() const;
+	size_t GetLength() const;
 
 };
