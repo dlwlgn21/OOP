@@ -12,6 +12,6 @@ int main()
 
 	str[2] = 'T';
 	std::cout << str << std::endl;
-	std::cout << str[3] << std::endl;
+	std::cout << str[3] << str[0] << std::endl;
 	std::cout << catStr << std::endl;
 }
