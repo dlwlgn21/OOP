@@ -4,12 +4,12 @@
 #include <iostream>
 #include <string.h>
 
-enum Mode{ NON_DELETE_MODE, DELETE_MODE };
 class String
 {
 private:
 	char* mStr;
 	size_t mLength;
+	enum Mode{ NON_DELETE_MODE, DELETE_MODE };
 	char* CatString(const char* str, Mode);
 public:
 	String();
