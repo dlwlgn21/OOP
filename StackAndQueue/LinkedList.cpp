@@ -51,7 +51,8 @@ bool LinkedList::Add(int value)
 
 int LinkedList::Delete()
 {
-	return -1;
+    std::cout << "if this function called, something wrong...." << std::endl;
+	return INT_MIN;
 }
 
 bool LinkedList::HasValue(const int value, int* out_value)
