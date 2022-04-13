@@ -22,7 +22,7 @@ public:
 	virtual ~LinkedList();
 
 	bool Add(int value);
-	virtual int Delete();
+	virtual int Delete() = 0;
 	int GetValue(const int value);
 	void Print();
 	friend std::ostream& operator<<(std::ostream& os, const LinkedList& instance);

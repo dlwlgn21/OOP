@@ -3,9 +3,13 @@ class Character
 {
 protected:
 	int mHp;
+
 public:
 	Character();
 	virtual ~Character();
-	virtual void Attack() const;
+
+public:
+	virtual void Attack() const = 0;
+	virtual void Dead() const = 0;
 };
 
