@@ -1,9 +1,8 @@
 #include <iostream>
 #include "LinkedList.h"
 
-LinkedList::LinkedList() 
+LinkedList::LinkedList() : mNodeList {new NodeList}
 {
-	mNodeList = new NodeList;
     mNodeList->pHead = nullptr;
     mNodeList->pTail = nullptr;
 }
