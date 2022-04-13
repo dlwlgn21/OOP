@@ -13,12 +13,17 @@ private:
 	BREED mBreed;
 public:
 	Dog();
+	Dog(const Dog& dog);
 	~Dog();
 
 	BREED GetBreed() const;
 	void SetBreed(BREED breed);
 
-	void Sound();
+	void Sound() override;
 	void Roll();
+	Animal* Clone()
+	{
+		return new Dog(*this);
+	}
 };
 

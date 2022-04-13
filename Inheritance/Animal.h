@@ -6,13 +6,17 @@ protected:
 	int mWeight;
 public:
 	Animal();
-	~Animal();
+	virtual ~Animal();
 
 	int GetAge() const;
 	void SetAge(const int age);
 	int GetWeight() const;
 	void SetWeight(const int weight);
 
-	void Sound();
+	virtual void Sound();
+	virtual Animal* Clone()
+	{
+		return nullptr;
+	}
 };
 

@@ -82,9 +82,7 @@ String& String::operator=(const String& other)
 	이게 선생님이 의도하신 대로 
 	제가 올바르게 작동하게 한 것인지 궁금합니다!
 	*/
-	if (strcmp(mStr, other.mStr) == 0) {
-		return *this;
-	}
+
 	delete[] mStr;
 	mStr = new char[other.mLength + 1];
 	mLength = other.mLength;

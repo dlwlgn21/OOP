@@ -7,9 +7,17 @@ Dog::Dog() : mBreed{ RETRIVER }
 
 }
 
+
+
 Dog::~Dog()
 {
     std::cout << "[Dog] destructor!!" << std::endl;
+}
+Dog::Dog(const Dog& dog)
+{
+    mWeight = dog.mWeight;
+    mAge = dog.mAge;
+    mBreed = dog.mBreed;
 }
 
 // 반환타입은 Dog class 외부에 속하므로 범위해결 연산자 써줘야함.
