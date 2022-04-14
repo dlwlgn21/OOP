@@ -27,3 +27,12 @@ int Stack::Delete()
 
     return retValue;
 }
+
+void Stack::PrintInfo()
+{
+    std::cout << "<DynamicStack>" << std::endl;
+    std::cout << "[1] Push" << std::endl;
+    std::cout << "[2] Pop" << std::endl;
+    std::cout << "[3] Exit" << std::endl;
+    std::cout << "-------------------" << std::endl;
+}

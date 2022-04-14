@@ -5,5 +5,7 @@ class Queue : public LinkedList
 public:
 	Queue();
 	int Delete() override;
+	void PrintInfo() override;
+
 };
 

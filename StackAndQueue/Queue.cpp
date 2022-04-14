@@ -28,3 +28,12 @@ int Queue::Delete()
 
     return retValue;
 }
+
+void Queue::PrintInfo()
+{
+    std::cout << "<DynamicQueue>" << std::endl;
+    std::cout << "[1] Enqueue" << std::endl;
+    std::cout << "[2] Dequeue" << std::endl;
+    std::cout << "[3] Exit" << std::endl;
+    std::cout << "-------------------" << std::endl;
+}

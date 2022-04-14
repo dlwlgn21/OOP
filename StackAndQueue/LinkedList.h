@@ -23,6 +23,8 @@ public:
 
 	bool Add(int value);
 	virtual int Delete() = 0;
+	virtual void PrintInfo() = 0;
+
 	int GetValue(const int value);
 	void Print();
 	friend std::ostream& operator<<(std::ostream& os, const LinkedList& instance);
