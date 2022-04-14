@@ -1,10 +1,6 @@
 #include <iostream>
 #include "Queue.h"
 
-Queue::Queue() 
-{
-}
-
 int Queue::Delete()
 {
     if (mNodeList->pHead == nullptr)

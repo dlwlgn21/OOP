@@ -1,10 +1,6 @@
 #include <iostream>
 #include "Stack.h"
 
-Stack::Stack()
-{
-}
-
 int Stack::Delete()
 {
     if (mNodeList->pHead == nullptr) 
