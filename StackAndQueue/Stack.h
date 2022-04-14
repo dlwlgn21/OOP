@@ -6,6 +6,7 @@ public:
 	Stack();
 	int Delete() override;
 	void PrintInfo() override;
+	void ProcessUserInput(LinkedList& list) override;
 
 };
 

@@ -37,3 +37,42 @@ void Queue::PrintInfo()
     std::cout << "[3] Exit" << std::endl;
     std::cout << "-------------------" << std::endl;
 }
+
+void Queue::ProcessUserInput(LinkedList& list)
+{
+    list.PrintInfo();
+    int command{};
+    bool isExit{ false };
+    while (command != EXIT)
+    {
+        std::cout << std::endl << ">";
+        std::cin >> command;
+
+        switch (command)
+        {
+        case ADD:
+        {
+            int value;
+            std::cout << "Queue Value >> ";
+            std::cin >> value;
+            list.Add(value);
+            break;
+        }
+        case DELETE:
+            list.Delete();
+            break;
+        case EXIT:
+            isExit = true;
+            break;
+        default:
+            std::cout << "잘못된 명령어 입니다!" << std::endl;
+            break;
+        }
+        list.Print();
+
+        if (isExit)
+        {
+            break;
+        }
+    }
+}
