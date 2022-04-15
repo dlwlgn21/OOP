@@ -82,7 +82,10 @@ String& String::operator=(const String& other)
 	이게 선생님이 의도하신 대로 
 	제가 올바르게 작동하게 한 것인지 궁금합니다!
 	*/
-
+	if (strcmp(mStr, other.mStr) == 0)
+	{
+		return *this;
+	}
 	delete[] mStr;
 	mStr = new char[other.mLength + 1];
 	mLength = other.mLength;
@@ -106,7 +109,7 @@ char& String::operator[](int index)
 	유효하지 않은 인덱스가 들어왔을때
 	어떻게 처리해주어야 이상적일까요??
 	*/
-	assert(index <= mLength && index >= 0);
+	assert(index < mLength && index >= 0);
 	return mStr[index];
 }
 
